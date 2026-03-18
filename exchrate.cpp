@@ -86,7 +86,7 @@ int main(int argc, char **argv)
 	transform(toCurrency.begin(), toCurrency.end(), toCurrency.begin(), ::tolower);
 	transform(fromCurrency.begin(), fromCurrency.end(), fromCurrency.begin(), ::tolower);
 
-	string url ="http://api.exchangeratesapi.io/v1/latest?access_key=e946e8d572e1312f4f0c8543a3781a72&symbols=" + toCurrency + "," + fromCurrency;
+	string url ="http://api.exchangeratesapi.io/v1/latest?access_key=<YOUR KEY HERE>&symbols=" + toCurrency + "," + fromCurrency;
 
 	HttpClient client(url);
 
